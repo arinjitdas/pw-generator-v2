@@ -157,6 +157,7 @@ input {
 }
 
 .error-message {
+    font-family: var(--body-font-family);
     font-size: var(--label-font-size);
     min-height: 2em;
     margin: 8px 0;
