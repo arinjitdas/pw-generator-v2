@@ -1,0 +1,215 @@
+:root {
+    --primary-green: #10B981;
+    --bg-grey: #1C1C1C;
+    --bg-blue: #1F2937;
+    --body-font-family: "Inter", sans-serif;
+    --body-font-size: 16px;
+    --body-font-weight: 500px;
+    --body-line-height: 24px;
+    --label-font-size: 14px;
+    --label-grey: #6C7F9A;
+    --error-red: #FB7185;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-grey);
+    display: flex;
+    color: white;
+}
+
+.main-content {
+
+    background-color: var(--bg-blue);
+    margin: auto;
+    padding: 48px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.primary-btn {
+    background-color: var(--primary-green);
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    font-weight: 600;
+    line-height: var(--body-line-height);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    padding: 9px 16px;
+    max-width: 240px;
+    margin: 24px 0 0 0;
+}
+
+.primary-btn:hover {
+    background-color: #10B981D0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #2F3E53;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.passwords-div {
+    gap: 24px;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 0;
+}
+
+.generated-password-div {
+    background-color: #273549;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    min-width: 240px;
+    padding: 0 16px;
+    border-radius: 6px;
+    margin-bottom: 0;
+}
+
+.generated-password-div:hover {
+    cursor: text;
+}
+
+.div-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 2px;
+}
+
+.div-checkbox input[type="checkbox"] {
+    height: 16px;
+    width: 16px;
+    transform: scale(1.4);
+    accent-color: var(--primary-green);
+    background-color: #1C1C1C;
+}
+
+.div-checkbox input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+/* .copy-btn {
+    background: url("/assets/Copy.svg");
+    width: 20px;
+    height: 20px;
+} */
+
+
+/* Text styles below */
+
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 600px;
+}
+
+h2 {
+    font-family: var(--body-font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #D5D4D8;
+    margin: 20px 0 0 0px;
+}
+
+label {
+    font-family: var(--body-font-family);
+    color: var(--label-grey);
+    font-size: var(--body-font-size);
+    margin: 0
+}
+
+#length-label {
+    margin-bottom: 12px;
+}
+
+input {
+    padding: 8px 8px;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    max-width: 60px;
+    background-color: #FFFFFF10;
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
+.green-text {
+    color: #10B981;
+}
+
+.passwords-text {
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    text-align: center;
+}
+
+.error-message {
+    font-size: var(--label-font-size);
+    min-height: 2em;
+    margin: 8px 0;
+}
+
+.error-message.has-error {
+    display: flex;
+    align-items: center;
+    min-height: 2em;
+    color: var(--error-red);
+}
+
+.error-message.has-error::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url("assets/WarningCircle.svg") no-repeat center/contain;
+    margin: 0 4px 0 0;
+    vertical-align: middle;
+}
+
+.input-error {
+    border: solid 1px;
+    border-color: var(--error-red) !important;
+    outline-color: var(--error-red) !important;
+}
+
+#character-count {
+    font-family: var(--body-font-family), sans-serif;
+    font-size: 12px;
+    color: var(--label-grey);
+    text-align: center;
+    margin: 24px auto 0 auto;
+}
+
+
+/*Google Font Styles*/
+
+.inter-body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karla-headings {
+  font-family: "Karla", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: -1.5px;
+}
+
+

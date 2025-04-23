@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class = "main-content">
+            
+            <!--Title and subtitle-->
+            <h1 class="karla-headings">Generate a <br><span class="green-text">random password</span></h1>
+            <h2>It's not <i>truly</i> random but you get the drift</h2>
+            <hr>
+            
+            <!--Length input and error message -->
+            <label id="length-label" for="length-input"> Choose a password length between 7 and 22 characters </label>
+            <input id="length-input" type="number" min="7" max="22" step="1">
+            <p class="error-message" id="length-error"></p>
+            
+            <!--Checkboxes and label text-->
+            <div class="div-checkbox" id="div-checkbox-specials">
+                <input type="checkbox" class="checkboxes-chars" id="checkbox-specials" checked="checked">
+                <label class="label-checkbox" for="checkbox-specials">Include special characters (eg. #, @, !, etc.)</label>
+            </div>
+             <div class="div-checkbox" id="div-checkbox-numbers">
+                <input type="checkbox" class="checkboxes-chars" id="checkbox-numbers" checked="checked">
+                <label class="label-checkbox" for="checkbox-numbers">Include numbers (eg. 1, 2, 3, etc.)</label>
+            </div>
+            
+            
+            <button class="primary-btn" id="btn-generate-password">Generate passwords</button>
+            
+            <hr>
+            
+            <!--Generated password divs-->
+            <div class = "passwords-div"> 
+                <div class = "generated-password-div" id="first-password-container">
+                    <p class="passwords-text green-text" id="first-password"></p>
+                </div>
+                <div class = "generated-password-div" id="second-password-container">
+                    <p class="passwords-text green-text" id="second-password"></p>
+                </div>
+            </div>
+            <p id="character-count"></p>
+        
+        </div>
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
